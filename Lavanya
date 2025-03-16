@@ -1,0 +1,51 @@
+graph LR
+    PM[Bajaj Electronics<br>Product Mix] --> D[DEPTH<br>Variants per Brand]
+    
+    %% DEPTH - Variants for selected brands in key categories
+    D --> D1[Televisions<br>Samsung]
+    D1 --> D1V1[32" LED<br>Smart TV]
+    D1 --> D1V2[43" QLED<br>4K UHD]
+    D1 --> D1V3[55" OLED<br>4K Smart]
+    D1 --> D1V4[65" QLED<br>8K Ultra]
+    D1 --> D1V5[75" Neo QLED<br>Smart TV]
+
+    D --> D2[Smartphones<br>Apple]
+    D2 --> D2V1[iPhone 14<br>128GB]
+    D2 --> D2V2[iPhone 14 Pro<br>256GB]
+    D2 --> D2V3[iPhone 15<br>512GB]
+    D2 --> D2V4[iPhone 15 Plus<br>256GB]
+    D2 --> D2V5[iPhone 15 Pro Max<br>1TB]
+
+    D --> D3[Refrigerators<br>LG]
+    D3 --> D3V1[260L<br>Double Door]
+    D3 --> D3V2[340L<br>Inverter Frost-Free]
+    D3 --> D3V3[420L<br>Side-by-Side]
+    D3 --> D3V4[500L<br>Smart Inverter]
+    D3 --> D3V5[650L<br>French Door]
+
+    D --> D4[Air Conditioners<br>Voltas]
+    D4 --> D4V1[1.0 Ton<br>3-Star Split]
+    D4 --> D4V2[1.5 Ton<br>5-Star Inverter]
+    D4 --> D4V3[2.0 Ton<br>4-Star Split]
+    D4 --> D4V4[1.2 Ton<br>Window AC]
+    D4 --> D4V5[1.8 Ton<br>Inverter Split]
+
+    D --> D5[Laptops<br>Dell]
+    D5 --> D5V1[Inspiron 14<br>i3, 8GB RAM]
+    D5 --> D5V2[Inspiron 15<br>i5, 16GB RAM]
+    D5 --> D5V3[XPS 13<br>i7, 16GB RAM]
+    D5 --> D5V4[G15 Gaming<br>i7, 32GB RAM]
+    D5 --> D5V5[Latitude 14<br>i5, 512GB SSD]
+
+    classDef main fill:#1a56cc,color:#fff,stroke:#003087,stroke-width:2px,font-weight:bold,font-size:24px
+    classDef depth fill:#6a1b9a,color:#fff,stroke:#4a0072,stroke-width:1px,font-size:20px
+    classDef variant fill:#e1bee7,color:#000,stroke:#8e24aa,stroke-width:1px,font-size:18px
+    
+    class PM main
+    class D main
+    class D1,D2,D3,D4,D5 depth
+    class D1V1,D1V2,D1V3,D1V4,D1V5 variant
+    class D2V1,D2V2,D2V3,D2V4,D2V5 variant
+    class D3V1,D3V2,D3V3,D3V4,D3V5 variant
+    class D4V1,D4V2,D4V3,D4V4,D4V5 variant
+    class D5V1,D5V2,D5V3,D5V4,D5V5 variant
